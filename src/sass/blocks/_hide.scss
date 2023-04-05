@@ -1,0 +1,10 @@
+.portfolio__grid.hide {
+    display: none;
+}
+
+.portfolio__grid.show {
+    display: grid;
+    & .portfolio__grid-img {
+        animation-name: zoomIn;
+    }
+}

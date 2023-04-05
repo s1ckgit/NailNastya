@@ -1,0 +1,30 @@
+@import 'base/normalize';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/animations';
+
+html {
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    color: white;
+}
+
+* {
+    box-sizing: inherit;
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+@import 'blocks/hide';
+@import 'blocks/link';
+@import 'blocks/title';
+@import 'blocks/button';
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/portfolio';

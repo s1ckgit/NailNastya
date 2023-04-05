@@ -1,0 +1,30 @@
+.header {
+    min-height: 70px;
+    border-bottom: 1px solid white;
+    &__navigation {
+        padding: 0 150px;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &__logo {
+        fill: white;
+        width: 60px;
+        height: 60px;
+        justify-self: center;
+        align-self: start;
+    }
+    &__list{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        align-self: center;
+    }
+    &__link {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 130%;
+    }
+}

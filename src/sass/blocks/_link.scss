@@ -1,0 +1,26 @@
+.link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: all .3s;
+    cursor: pointer;
+    &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        top: 24px;
+        left: 0;
+        background-color: $hover-color;
+        width: 0;
+        transition: all .3s;
+    }
+    &:hover {
+        color: $hover-color;
+        &::after {
+            width: 100%;
+        }
+    }
+    &:active {
+        color: #755e40
+    }
+}
