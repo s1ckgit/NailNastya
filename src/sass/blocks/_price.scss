@@ -1,0 +1,66 @@
+.price {
+    background-color: $background-color;
+    &__section {
+        padding-bottom: 100px;
+    }
+    &__title {
+        margin: 80px 0;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        row-gap: 80px;
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        justify-content: center;
+        &_manicure {
+            padding-left: 135px;
+        }
+        &_pedikure {
+            padding-right: 135px;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid $line-color;
+        padding-bottom: 25px;
+        &-name {
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 130%;
+        }
+        &-price {
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 130%;
+        }
+        &-masters {
+            margin-top: 30px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, min-content);
+            grid-auto-rows: min-content;
+            justify-items: center;
+            row-gap: 15px;
+            font-size: 18px;
+        }
+        &-master {
+            justify-self: start;
+        }
+        &-link {
+            font-size: 24px;
+            line-height: 1;
+            justify-self: end;
+        }
+    }
+}

@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     'use strict'
 
+    // Tabs
+
     const tab = document.querySelectorAll('.portfolio__list-item'),
         list = document.querySelector('.portfolio__list'),
         tabContent = document.querySelectorAll('.portfolio__grid');
@@ -38,4 +40,18 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Modal
+
+    const button = document.querySelector('.button'),
+        overlay = document.querySelector('.overlay'),
+        closeButton = document.querySelector('.modal__close');
+
+    button.addEventListener('click', () => {
+        overlay.classList.add('active')
+    })
+
+    closeButton.addEventListener('click', () => {
+        overlay.classList.remove('active')
+    })
 })

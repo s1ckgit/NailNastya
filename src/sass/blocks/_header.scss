@@ -1,6 +1,7 @@
 .header {
-    min-height: 70px;
-    border-bottom: 1px solid white;
+    min-height: 100px;
+    padding-top: 30px;
+    border-bottom: 1px solid $line-color;
     &__navigation {
         padding: 0 150px;
         display: grid;

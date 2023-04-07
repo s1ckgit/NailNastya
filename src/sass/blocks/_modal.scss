@@ -1,0 +1,65 @@
+.overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, .5);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.modal {
+    position: absolute;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 960px;
+    min-height: 550px;
+    max-height: 100vh;
+    background-color: $background-color;
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        & path {
+            transition: all .3s;
+        }
+        &:hover path {
+            stroke: $hover-color;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        grid-template-rows: minmax(min-content, max-content);
+        margin-top: 20px;
+        list-style: none;
+        padding: 0;
+    }
+    &__item{
+        &-img {
+            width: 100%;
+        }
+        &-name {
+            text-align: center;
+            margin: 5px 0;
+            font-size: 24px;
+        }
+        &-button {
+            width: 100%;
+        }
+    }
+
+}

@@ -21,6 +21,9 @@
         }
     }
     &:active {
-        color: #755e40
+        color: rgba(205, 170, 125, .7)
+    }
+    &.active {
+        color: $hover-color
     }
 }
