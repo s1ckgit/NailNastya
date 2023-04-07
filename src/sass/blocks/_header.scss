@@ -2,6 +2,26 @@
     min-height: 100px;
     padding-top: 30px;
     border-bottom: 1px solid $line-color;
+    position: relative;
+    &__hamburger {
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        row-gap: 6px;
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 45px;
+        cursor: pointer;
+        &.active &-line:nth-child(2){
+            width: 100%;
+        }
+        &-line {
+            width: 40px;
+            height: 2px;
+            background-color: white;
+        }
+    }
     &__navigation {
         padding: 0 150px;
         display: grid;

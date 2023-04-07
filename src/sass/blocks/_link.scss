@@ -8,7 +8,7 @@
         content: '';
         position: absolute;
         height: 1px;
-        top: 24px;
+        top: calc(100% + 3px);
         left: 0;
         background-color: $hover-color;
         width: 0;
