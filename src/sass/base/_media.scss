@@ -3,12 +3,48 @@
         padding-left: 30px;
         padding-right: 30px;
     }
+    .about {
+        & .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+    .footer {
+        & .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .header {
         &__navigation {
             padding: 0 50px;
+        }
+    }
+    .modal {
+        width: 90%;
+    }
+    .price {
+        &__list {
+            &_pedikure {
+                padding-right: 60px;
+            }
+            &_manicure {
+                padding-left: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .footer {
+        & .container {
+            grid-template-columns: repeat(3,minmax(min-content,max-content));   
+        }
+        &__logo {
+            display: none;
         }
     }
 }
@@ -19,6 +55,96 @@
             padding: 0 10px;
         }
     }
+    .promo {
+        min-height: 615px;
+        &__info {
+            top: 25%;
+            width: 80%;
+        }
+        &__tip {
+            display: none;
+        }
+    }
+    .about {
+        & .container {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 1fr);
+            &-description {
+                font-size: 24px;
+            }
+        }
+    }
+    .portfolio {
+        &__grid {
+            gap: 12px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        &__list {
+            margin-top: 55px;
+        }
+    }
+    .footer {
+        & .container {
+            grid-template-columns: repeat(2,minmax(min-content,max-content));
+            row-gap: 30px;
+        }
+    }
+    .modal {
+        min-height: unset;
+        overflow-y: scroll;
+        &__list {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+        }
+    }
+    .masters {
+        &__title {
+            margin: 50px 0;
+        }
+        &__grid {
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 32px;
+        }
+    }
+    .reviews {
+        &__title {
+            margin: 50px 0;
+        }
+        &__grid {
+            padding: 10px;
+            gap: 10px;
+            grid-template-rows: 380px;
+            grid-auto-rows: 380px;
+        }
+    }
+    .price {
+        &__title {
+            margin: 50px 0;
+        }
+        &__list {
+            &_manicure {
+                padding-left: 0;
+            }
+            &_pedikure {
+                padding-right: 0;
+            }
+        }
+        &__photo {
+            max-height: 400px;
+            object-fit: cover;
+            object-position: top;
+            &:last-child {
+                grid-row: 3 / 4;
+            }
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
 }
 
 @media screen and (max-width: 576px) {
@@ -30,6 +156,81 @@
         }
         &__hamburger {
             display: flex;
+        }
+    }
+    .promo {
+        &__info {
+            top: 20%;
+        }
+        &__title {
+            font-size: 60px;
+        }
+    }
+    .about {
+        &__grid {
+            grid-template-columns: 1fr;
+            row-gap: 40px;
+        }
+    }
+    .portfolio {
+        & .container {
+            padding-bottom: 60px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .footer {
+        & .container {
+            grid-template-columns: 1fr; 
+            row-gap: 30px;
+        }
+    }
+    .modal {
+        &__list {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+        }
+    }
+    .masters {
+        &__title {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .reviews {
+        &__title {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .price {
+        &__title {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer {
+        & .container {
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }

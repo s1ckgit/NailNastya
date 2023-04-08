@@ -7,6 +7,7 @@ html {
     box-sizing: border-box;
     font-family: 'Cormorant Garamond', serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -17,6 +18,7 @@ html {
 
 .container {
     max-width: 1296px;
+    min-width: 300px;
     margin: 0 auto;
 }
 

@@ -27,6 +27,9 @@
             padding-right: 135px;
         }
     }
+    &__photo {
+        width: 100%;
+    }
     &__item {
         display: flex;
         justify-content: space-between;

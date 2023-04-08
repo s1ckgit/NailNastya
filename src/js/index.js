@@ -49,10 +49,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     button.addEventListener('click', () => {
         overlay.classList.add('active')
+        document.body.style.overflow = 'hidden'
     })
 
     closeButton.addEventListener('click', () => {
         overlay.classList.remove('active')
+        document.body.style.overflow = 'unset'
     })
 
     // Hamburger 
