@@ -200,6 +200,11 @@
         &__grid {
             grid-template-columns: 1fr;
         }
+        &__item {
+            &-img {
+                height: 400px;
+            }
+        }
     }
     .reviews {
         &__title {

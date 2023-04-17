@@ -36,6 +36,9 @@
         flex-wrap: wrap;
         border-bottom: 1px solid $line-color;
         padding-bottom: 25px;
+        &-masterprice {
+            text-align: center;
+        }
         &-name {
             font-weight: 700;
             font-size: 27px;
@@ -51,7 +54,6 @@
             width: 100%;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, min-content);
             grid-auto-rows: min-content;
             justify-items: center;
             row-gap: 15px;
@@ -64,6 +66,11 @@
             font-size: 24px;
             line-height: 1;
             justify-self: end;
+            text-align: end;
+            &.inactive {
+                opacity: .5;
+                cursor: default;
+            }
         }
     }
 }
